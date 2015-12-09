@@ -1,17 +1,19 @@
 /*************************************************************************
-	> File Name: daemon.c
-	> Author: 
-	> Mail: 守护进程 
-	> Created Time: 2015年11月04日 星期三 15时57分41秒
+ **	    >  Name : Daemon.c
+ **	    > Author: LiYingXiao (Sweethreart502) 
+ **	    >  Mail : liyingxiao502@gmail.com
+ **	    >  Blog : http://blog.csdn.net/u013166575
+ **	    > Created Time: 2015年12月09日 星期三 21时33分19秒
+ **         > Description: 守护进程的实现
  ************************************************************************/
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<fcntl.h>
-#include<sys/types.h>
-#include<unistd.h>
-#include<sys/wait.h>
+#include　<stdio.h>
+#include　<stdlib.h>
+#include　<string.h>
+#include　<fcntl.h>
+#include　<sys/types.h>
+#include　<unistd.h>
+#include　<sys/wait.h>
 
 /* 创建守护进程函数 */
 void init_daemon () {
